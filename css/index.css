@@ -49,6 +49,10 @@ body {
    
     color: white;
 }
+#learn:hover {
+    padding: 22px 35px;
+    font-size: 20px;
+}
 .icons {
     margin-top: 20px;
     
@@ -164,6 +168,11 @@ background-size: cover;
     width: 150px;
     margin-left: 80px;
     margin-bottom: 35px;
+}
+#contact:hover {
+    background-color: white;
+    color: black;
+    border-color: #F2F2F2;
 }
 .text-bottom {
     display: flex;
