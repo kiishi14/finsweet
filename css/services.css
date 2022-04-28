@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none; 
+}
+
+.navbar li {
+    margin-right: 30px;
+}
+
+.navbar a:hover {
+  color: #FF6433;  
+}
+
+.assistance {
+    display: flex;
+}
+
+.a-text {
+    display: block;
+}
+.navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+.right-section {
+    display: flex;
+}
+
+.right-section .navigation {
+    border-right: 2px solid #ccc;
+}
+
+.call {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.right-section {
+    align-items: center;
+}
+
+/* SERVICES-SECTION STYLING */
+.container {
+    width: 80%;
+    margin: 50px auto;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.image-section {
+    width: 40%;
+    background: url(../images/servicescar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-section {
+    width: 60%;
+    background-color: black;
+    color: white;
+    padding: 100px;
+}
+
+.text-section h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.text-section p {
+    color: #F2F2F2;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.text-section button {
+    background-color: #FF6433;
+    padding: 16px 30px;
+    border: 1px solid #FF6433;
+    border-radius: 12px;
+    color: white;
+}
+
+.auto-diagnotics-section {
+    background-color: #F5F5F5;
+    height: 100vh;
+   
+}
+
+.auto-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #FF6433;
+    margin-left: 60px;
+    padding-top: 90px;
+    justify-content: space-between;
+}
+
+.details-section {
+    background-color: white;
+    width: 48%;
+    border: 1px solid blue;
+    height: 400px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.image-top {
+    height: 45%;
+    background: url(../images/serviceswheel.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+.text-bottom {
+    height: 55%;
+    border: 1px solid green;
+    padding-top: 20px;
+}
+
+.text-bottom h3 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.text-bottom p {
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+
+.text-bottom h6 {
+    font-size: 12px;
+}
+
+.text-bottom a {
+    color: black;
+}
+
+.grid-container {
+    width: 50%;
+    background-color: white;
+    border: 1px solid blue;
+}

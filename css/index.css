@@ -81,12 +81,12 @@ body {
     width: 50%;
     height: 80vh;
     margin-left: 50px;
-    background: url(../images/man.png);
+    background: url(../images/header-img.png);
     background-size: cover;
     background-position: center;   
 }
 
-.image-section-content {
+/* .image-section-content {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -139,7 +139,7 @@ body {
     width: 50px;
     margin: auto 10px;
     font-size: 20px;
-}
+} */
 
 .inner-border {
     margin: 90px 0 100px 50px;
@@ -713,3 +713,53 @@ footer {
 .copyright {
     color: #939191;
 } 
+
+/* for mobile phones */
+@media (max-width:426px) {
+    .phone-flex {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .navbar {
+        align-items: flex-start;
+    }
+    .right-section, .assistance {
+        align-items: flex-start;
+    }
+    .call {
+        margin-left: 0;
+    }
+    .right-section .navigation {
+        border-right: 0;
+    }
+    .right-section {
+        display: none;
+    }
+    .navigation {
+       display: block;
+       width: 100%;
+    }
+    .navbar li {
+        padding: 10px;
+    }
+    .section1 {
+        margin: 20px auto;
+        flex-direction: column-reverse;
+
+    }
+    .inner-border {
+        margin: 2px 0  20px 5px;
+    }
+    .text-section h1 {
+        font-size: 30px;
+
+    }
+    .text-section {
+       width: 100%;
+    }
+    .image-section {
+        width: 100%;
+        margin-left: 0;
+
+    }
+}
