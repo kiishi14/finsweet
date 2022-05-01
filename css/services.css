@@ -105,11 +105,63 @@ body {
 
 .auto-diagnotics-section {
     background-color: #F5F5F5;
-    height: 100vh;
+    height: 100vh; 
+    padding-top: 50px;
+}
+.grid-container {
+    width: 80%;
+    margin: 0 auto;
    
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1.5fr;
+    grid-gap: 10px;
+    
+}
+.gridbox {
+    background-color: white;
+    grid-auto-rows: minmax(250px auto);
+}
+.left-box {
+   grid-row: 1/5;
+}
+.leftbox-grid {
+    display: grid;
+    grid-template-rows: 7fr 5fr;
+    padding: 15px 15px 0 15px;
+}
+.left-image-box {
+    background: url(../images/serviceswheel.png);
+    background-size: cover; 
+    background-position: center;
+}
+.left-text-box a {
+    color: black;
+}
+.left-text-box h3 {
+    margin-bottom: 20px;
+    font-size: 28px;
 }
 
-.auto-container {
+.left-text-box p {
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+
+.left-text-box {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+.right-box1, .right-box2, .right-box3, .right-box4, .right-box5, .right-box6 {
+    padding: 20px;
+    text-align: center;
+}
+.right-box5, .right-box6 {
+    align-self: stretch;
+}
+
+/* .auto-container {
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -128,9 +180,9 @@ body {
     display: flex;
     flex-direction: column;
     
-}
+} */
 
-.image-top {
+/* .left-image-box {
     height: 45%;
     background: url(../images/serviceswheel.png);
     background-size: cover;
@@ -139,32 +191,27 @@ body {
    
 }
 
-.text-bottom {
+.left-text-box {
     height: 55%;
     border: 1px solid green;
     padding-top: 20px;
 }
 
-.text-bottom h3 {
-    margin-bottom: 20px;
-    font-size: 28px;
-}
 
-.text-bottom p {
-    opacity: 0.6;
-    margin-bottom: 20px;
-}
-
-.text-bottom h6 {
-    font-size: 12px;
-}
-
-.text-bottom a {
-    color: black;
-}
 
 .grid-container {
-    width: 50%;
+    width: 80%;
     background-color: white;
-    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: fr 1fr;
+     grid-auto-rows:minmax(700px auto); 
+    grid-gap: 10px;
 }
+.left-box {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+} */
+
+
+
+

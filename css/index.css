@@ -65,12 +65,13 @@ body {
     display: flex;
     margin: 50px auto;
     width: 80%;
+    
 }
 
 .text-section {
     width: 50%;
     margin-top: 20px;
-    height: 80vh;
+    min-height: 70vh;
 }
 
 .text-section h1 {
@@ -78,8 +79,8 @@ body {
 }
 
 .image-section {
+    min-height: 70vh;
     width: 50%;
-    height: 80vh;
     margin-left: 50px;
     background: url(../images/header-img.png);
     background-size: cover;
@@ -175,15 +176,15 @@ body {
 /* SECTION 2 STYLING */
 .section2 {
     background-color: #E2E6E9;
-    height: 100vh;
+
+    min-height: 100vh;
 }
 
-.section2-content{
+.section2-container {
     display: flex;
     width: 80%;
     margin: 0 auto; 
 }
-
 .right {
     width: 50%; 
 }
@@ -263,14 +264,14 @@ form input {
 .section3-left {
     width: 50%;
     margin-top: 120px;
-    height: 80vh;
+    min-height: 80vh;
 }
 
 .section3-right {
     width: 50%;
-    height: 80vh;
+    min-height: 80vh;
     margin-top: 80px;
-   margin-left: 100px;
+    margin-left: 100px;
 }
 
 .inner-body {
@@ -343,22 +344,27 @@ form input {
 .section4 {
     min-height: 100vh;
     background-color: #F2F2F2;
+    padding: 50px 0;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+     grid-template-columns:repeat(4, 1fr); 
+    /* i can use this instead of grid gap
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; */
+    grid-gap: 10px;
     width: 80%;
-    margin: 30px auto 20px auto;
-    background-color: white;
-    height: 300px;
+    margin: 30px auto 10px auto;
+    grid-auto-rows:minmax(200px, auto) ;
+    
 }
 
 .grid-item {
     text-align: center;
-    border: 3px solid #F2F2F2;
-    height: 150px;
+    background-color: white;
     padding: 40px;
+    
 }
 
 .grid-item:hover {
@@ -392,38 +398,36 @@ form input {
 /* SECTION 5 STYLING */
 .section5 {
     background-color: #F2F2F2;  
+    width: 100%;
+}
+
+.image-top #left-image {
+    width: 20%;
+    background: url(../images//section5-car.png);
+    background-size: cover;
+}
+
+.image-top #right-image {
+    width: 45%;
+    background: url(../images/section5-engine.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .image-top {
     display: flex;
-    height: 80vh;
+    min-height: 80vh;
     padding-top: 20px;
 }
 
-.image-top #left-image{
-   width: 50%;
-   background: url(../images/section5-car.png);
-   background-position: -100px;
-   background-size: cover;
-}
-
-.image-top #right-image {
-    width: 50%;
-    background: url(../images/section5-engine.png);
-    background-position: center;
-    background-size: cover;
-}
-
 .orange-card {
-    height: 76.5vh;
-    width: 45%;
-    background-color: #FF6433;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    position: absolute;
-    margin-left: 150px;
+   width: 35%;
+   background-color: #FF6433;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 20px;
+   
 }
 
 .orange-card h3 {
@@ -431,7 +435,7 @@ form input {
     color: white;
     width: 80%;
     margin: 80px; 
-}
+} 
 
 #contact {
     background-color: #1E1B1B;
@@ -451,7 +455,7 @@ form input {
 
 .text-bottom {
     display: flex;
-    height: 20vh;
+    min-height: 20vh;
     justify-content: space-around;
     padding: 50px;
     align-items: center;
@@ -466,30 +470,33 @@ form input {
    font-size: 18px;
 }
 
+
 /* SECTION 6 STYLING */
 .section6 {
-    height: 80vh;
+    min-height: 80vh;
     margin-bottom: 20px;
+    width: 90%;
+    margin: auto;
 }
 
 .section6-header {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 90px;
     font-size: 35px;
 }
 
 .grid-container2 {
     display: grid;
-    width: 80%;
+   text-align: center;
     grid-template-columns: auto auto auto auto auto;
-    padding: 60px;
-    margin-left: 30px;
+    padding: 10px;
+    margin-right: 20px;
 }
 
 /* SECTION 7 STYLING */
 .section7 {
   background-color: #F2F2F2;
-  height: 100vh; 
+  min-height: 100vh; 
 }
 
 .section7-container {
@@ -501,7 +508,7 @@ form input {
 
 .section7-content {   
     padding-top: 70px;
-    margin-bottom: 100px;
+    
     font-size: 16px;
     line-height: 1.5rem;
 }
@@ -592,7 +599,7 @@ form input {
 
 /* SECTION 8 STYLING */
 .section8 {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #E2E6E9;  
 }
 
@@ -633,7 +640,7 @@ form input {
 }
 
 footer {
-    height: 60vh;
+    min-height: 60vh;
     background-color: #1E1B1B;
 }
 
@@ -718,7 +725,7 @@ footer {
 @media (max-width:426px) {
     .phone-flex {
         flex-direction: column;
-        justify-content: flex-start;
+
     }
     .navbar {
         align-items: flex-start;
@@ -742,16 +749,24 @@ footer {
     .navbar li {
         padding: 10px;
     }
+   
     .section1 {
-        margin: 20px auto;
-        flex-direction: column-reverse;
-
+        margin-bottom: 50px;
     }
+
+    .section1 .text-section {
+        order: 2;
+    }
+
+    .section1 .image-section {
+        order: 1;
+    }
+
     .inner-border {
         margin: 2px 0  20px 5px;
     }
     .text-section h1 {
-        font-size: 30px;
+        font-size: 35px;
 
     }
     .text-section {
@@ -760,6 +775,175 @@ footer {
     .image-section {
         width: 100%;
         margin-left: 0;
-
     }
+    .section2-container {
+        flex-direction: column;
+    }
+    .section2-container .left,  .section2-container .right {
+        width: 100%;
+    }
+    .section2-container .left {
+        font-size: 35px;
+    }
+    .section2-container .left .left-body {
+        width: 100%;
+    }
+
+    #servicing h1,  #quote h1, #process h1 {
+        font-size: 35px;
+    }
+
+    .item1, .item2, .item3 {
+        margin-left: 0;
+        
+    }
+
+    .expert-img, .service-img, .transparent-img {
+        width: 15%;
+    }
+    .service-text h3, .expert-text h3, .transparent-text h3 {
+        font-size: 28px;
+    }
+    .service-text p, .expert-text p, .transparent-text p, .section2-footer p {
+        font-size: 20px;
+    }
+    form input {
+        margin: 3px auto;
+    }
+    #quote-btn, #quote {
+        margin-left: 0;
+    }
+    .section3-right, .section3-left, .left-body, .section3-contents {
+       width: 100%;
+    }
+    .section3-left {
+        margin-top: 20px;
+    }
+    .section3-right {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .icons .icon{
+        width: 80%;
+        margin-left: 3px;
+    }
+    .content01 {
+        margin-top: 30px;
+    }
+    .content02 {
+        margin-top: 20px;
+    }
+    .content03 {
+        margin-top: 22px;
+    }
+    .content02 h4 {
+        margin-top: 20px;
+    }
+    .content01 h4, .content02 h4, .content03 h4 {
+        margin-bottom: 10px;
+    }
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+    .grid-item {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 7px solid #F2F2F2;
+    }
+    .section4-header h2 {
+        font-size: 30px;
+    }
+    .section4-header {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .section4-footer {
+        float: none;
+       margin-left: 90px;
+       width: 100%;
+    }
+
+    #inner-header4 {
+        padding-top: 20px;
+    }
+
+    .orange-card h3 {
+        font-size: 28px;
+        width: 100%;
+        margin: 20px;
+    }
+
+    #contact {
+        margin-left: 20px;
+    }
+    
+    .image-top #left-image,.orange-card, .image-top #right-image {
+        width: 100%;
+    }
+
+    .image-top #left-image, .image-top #right-image{
+        background-position: contain;
+        height: 300px;
+    } 
+    .btext {
+       text-align: center;
+       margin-bottom: 10px;
+    }
+    .grid-container2 {
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       padding: 5px;
+    }
+    .left-card, .right-card {
+        width: 100%;
+    }
+    
+    .right-card {
+        margin-top: 20px;
+    }
+    
+    .section7-content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .section7-content h2 {
+       width: 100%;
+    }
+    #left-right {
+        margin-right: 0;
+    }
+    .section7-content p {
+        width: 100%;
+    } 
+    .section8 {
+        padding-bottom: 80px;
+    }
+
+    .questions {
+        width: 90%;
+    }
+
+    .left-foot {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .left-foot h3 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .right-foot {
+        width: 100%;
+    }
+    #logo, .footer-nav {
+        margin-bottom: 20px;
+    }
+
 }
