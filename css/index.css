@@ -910,12 +910,16 @@ footer {
         margin-left: 3px;
     }
 
+    .icons {
+        margin-top: 25px;
+    }
+
     .content01 {
         margin-top: 25px;
     }
 
     .content02, .content03  {
-        margin-top: 25px;
+        margin-top: 30px;
     }
 
     .content01 h4, .content02 h4, .content03 h4 {
