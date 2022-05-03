@@ -215,3 +215,198 @@ body {
 
 
 
+/* .section1 {
+        margin-bottom: 50px;
+    }
+
+    .section1 .text-section {
+        order: 2;
+    }
+
+    .section1 .image-section {
+        order: 1;
+    }
+
+    .inner-border {
+        margin: 2px 0  20px 5px;
+    }
+    .text-section h1 {
+        font-size: 35px;
+
+    }
+    .text-section {
+       width: 100%;
+    }
+    .image-section {
+        width: 100%;
+        margin-left: 0;
+    }
+    .section2-container {
+        flex-direction: column;
+    }
+    .section2-container .left,  .section2-container .right {
+        width: 100%;
+    }
+    .section2-container .left {
+        font-size: 35px;
+    }
+    .section2-container .left .left-body {
+        width: 100%;
+    }
+
+    #servicing h1,  #quote h1, #process h1 {
+        font-size: 35px;
+    }
+
+    .item1, .item2, .item3 {
+        margin-left: 0;
+        
+    }
+
+    .expert-img, .service-img, .transparent-img {
+        width: 15%;
+    }
+    .service-text h3, .expert-text h3, .transparent-text h3 {
+        font-size: 28px;
+    }
+    .service-text p, .expert-text p, .transparent-text p, .section2-footer p {
+        font-size: 20px;
+    }
+    form input {
+        margin: 3px auto;
+    }
+    #quote-btn, #quote {
+        margin-left: 0;
+    }
+    .section3-right, .section3-left, .left-body, .section3-contents {
+       width: 100%;
+    }
+    .section3-left {
+        margin-top: 20px;
+    }
+    .section3-right {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .icons .icon{
+        width: 80%;
+        margin-left: 3px;
+    }
+    .content01 {
+        margin-top: 30px;
+    }
+    .content02 {
+        margin-top: 20px;
+    }
+    .content03 {
+        margin-top: 22px;
+    }
+    .content02 h4 {
+        margin-top: 20px;
+    }
+    .content01 h4, .content02 h4, .content03 h4 {
+        margin-bottom: 10px;
+    }
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+    .grid-item {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 7px solid #F2F2F2;
+    }
+    .section4-header h2 {
+        font-size: 30px;
+    }
+    .section4-header {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .section4-footer {
+        float: none;
+       margin-left: 90px;
+       width: 100%;
+    }
+
+    #inner-header4 {
+        padding-top: 20px;
+    }
+
+    .orange-card h3 {
+        font-size: 28px;
+        width: 100%;
+        margin: 20px;
+    }
+
+    #contact {
+        margin-left: 20px;
+    }
+    
+    .image-top #left-image,.orange-card, .image-top #right-image {
+        width: 100%;
+    }
+
+    .image-top #left-image, .image-top #right-image{
+        background-position: contain;
+        height: 300px;
+    } 
+    .btext {
+       text-align: center;
+       margin-bottom: 10px;
+    }
+    .grid-container2 {
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       padding: 5px;
+    }
+    .left-card, .right-card {
+        width: 100%;
+    }
+    
+    .right-card {
+        margin-top: 20px;
+    }
+    
+    .section7-content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .section7-content h2 {
+       width: 100%;
+    }
+    #left-right {
+        margin-right: 0;
+    }
+    .section7-content p {
+        width: 100%;
+    } 
+    .section8 {
+        padding-bottom: 80px;
+    }
+
+    .questions {
+        width: 90%;
+    }
+
+    .left-foot {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .left-foot h3 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .right-foot {
+        width: 100%;
+    }
+    #logo, .footer-nav {
+        margin-bottom: 20px;
+    } */
