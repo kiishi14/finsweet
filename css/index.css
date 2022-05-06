@@ -71,15 +71,23 @@ body {
 .text-section {
     width: 50%;
     margin-top: 20px;
-    min-height: 70vh;
 }
 
 .text-section h1 {
     font-size: 2.8rem;
 }
 
+.tt-p {
+    font-size: 16px;
+    color:gray
+ }
+
+ .tt-p2 {
+     font-size: 18px;
+ }
+
 .image-section {
-    min-height: 70vh;
+    aspect-ratio: 1.23;
     width: 50%;
     margin-left: 50px;
     background: url(../images/header-img.png);
@@ -678,19 +686,35 @@ form input {
     padding: 5px;
 }
 
-.question {
+.question1, .question2, .question3, .question4, .question5 {
     border-bottom: 10px solid #E2E6E9;
     padding: 12px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.question1 {
-    padding: 12px;
+.question2, .question3, .question4, .question5 {
+   justify-content: space-between;
+    text-align: center;
+}
+
+ .question {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.answer p {
+    width: 80%;
+    color: #939191;
+
+}
+
+.question1 {
+    
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
@@ -783,6 +807,272 @@ footer {
 .copyright {
     color: #939191;
 } 
+
+/* for tablets */
+@media (max-width:769px) and (min-width:481px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .section1 {
+        width: 90%;
+        margin: 28px auto;
+    }
+
+    .inner-border {
+        margin: 50px 0 20px 8px;
+    }
+    .image-section {
+        margin-left: 20px;
+        height: 400px; 
+    }
+
+    .text-section h1 {
+        font-size: 2rem;
+        margin-left: 5px;
+    }
+
+    .book {
+        padding: 8px 15px;
+    }
+
+    .tt-p {
+       font-size: 12px;
+    }
+
+    .tt-p2 {
+        font-size: 14px;
+    }
+
+    /* section2 */
+    .section2 {
+        min-height: 60vh;
+    }
+
+    #servicing {
+        font-size: 1.2rem;
+    }
+
+    #quote {
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+
+    .item1, .item2, .item3 {
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .right, .left {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .left-body {
+        width: 90%;
+    }
+
+    form input {
+        margin: 3px 0 3px 0;
+    }
+
+    #quote-btn {
+        margin-left: 0;
+        padding: 8px 15px;
+    }
+
+    .btn {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    /* section 3 */
+    .section3-content {
+        padding: 30px 0 30px 0;
+        width: 90%;
+        min-height: 50vh;
+    }
+
+    .section3-right {
+        margin-left: 50px;
+    }
+
+    .icon {
+        width: 90%;
+        margin-left: 3px;
+    }
+
+    .content01, .content03 {
+        margin-top: 25px;
+    }
+
+    .content02 {
+        margin-top: 28px;
+    }
+
+    .content01 h4, .content02 h4, .content03 h4 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .content01 p, .content02 p, .content03 p {
+        font-size: 0.8rem;
+    }
+
+    #process {
+        font-size: 1.2rem;
+    }
+
+    #learn {
+        padding: 8px 15px;
+    }
+
+    /* section 4 */
+    .section4 {
+        padding: 20px 0;
+        min-height: 60vh;
+    }
+
+    .section4 h2 {
+        font-size: 1.2rem;
+    }
+
+    .section4 .offers .offer-items {
+        height: 180px; 
+    }
+
+    .section4 .offer-container {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    #section4-p {
+        margin-left: 500px;
+    }
+
+    /* section 5 */
+    .image-top {
+        padding-top: 0;
+        min-height: 50vh;
+    }
+
+    .orange-card {
+        width: 45%;
+    }
+
+    .orange-card h3 {
+        margin: 0;
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    #contact {
+        margin-left: 0;
+        padding: 8px 20px;
+        margin-top: 20px;
+    }
+
+    .right-image {
+        width: 35%;
+    }
+
+    .text-bottom {
+        padding: 0;
+        text-align: center;
+        min-height: 10vh;
+    }
+
+    .text-bottom span {
+        font-size: 1.2rem;
+    }
+
+    .text-bottom p {
+        font-size: 0.9rem;
+    }
+
+    /* section 6 */
+    .section6 {
+        min-height: 50vh;
+    }
+
+    .section6 h3{
+        font-size: 1.2rem;
+    }
+    .section6 .brands .brand-item {
+        width: 25%;
+        text-align: center;
+    }
+
+    .section6 .brands .brand-item img {
+        width: 100%;
+    }
+
+    .section6 .brands-container {
+        width: 100%;
+    }
+
+    /* section 7 */
+   .section7 {
+       min-height: 60vh;
+   }
+   
+    .section7-content h2 {
+        width: 100%;
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+
+    .section7-container {
+        width: 80%;
+        padding-top: 50px;
+    }
+
+    .section7-content {
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+
+    #left-right {
+        margin-right: 0;
+    }
+
+    /* section 8 */
+    .section8 {
+        min-height: 60vh;
+        padding-bottom: 30px;
+    }
+
+    .questions {
+        width: 70%;
+    }
+    
+    /* footer */
+    .left-foot h3 {
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+    .upper-foot {
+        width: 90%;
+    }
+
+    .lower-foot-container {
+        padding: 10px;
+    }
+
+    .lower-foot {
+        width: 90%;
+    }
+
+    .lower-foot a {
+        font-size: 12px;
+    }
+
+    .lower-foot li {
+        margin-left: 15px;
+    }
+}
 
 /* for mobile phones */
 @media (max-width:426px) {
@@ -990,6 +1280,7 @@ footer {
         margin-left: 0;
         padding: 8px 20px;
         margin-top: 50px;
+        width: 120px;
     }
 
     .text-bottom {
@@ -1013,7 +1304,7 @@ footer {
     }
     
     .section6 {
-        height: 60vh;
+        min-height: 60vh;
     }
 
     .section6 .brands .brand-item {
@@ -1048,6 +1339,14 @@ footer {
         padding: 20px 5px 20px 5px;
     }
 
+    .profile-title img {
+        width: 50px;
+    }
+    
+    .details {
+        margin-left: 7px;
+    }
+
     .section7-content h2 {
         width: 100%;
         font-size: 1.2rem;
@@ -1059,9 +1358,10 @@ footer {
 
     .section8 {
         min-height: 100vh;
+        padding-bottom: 30px;
     }
     .questions {
-        width: 85%;
+        width: 90%;
     }
 
     .upper-foot, .left-foot, .right-foot {
