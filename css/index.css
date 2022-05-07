@@ -264,7 +264,7 @@ form input {
     width: 80%;
     margin: 0 auto;
     min-height: 80vh;
-    padding: 60px;
+    padding: 30px;
 }
 
 .section3-left {
@@ -273,7 +273,35 @@ form input {
 
 .section3-right {
     width: 50%;
-    margin-left: 100px;
+    margin-left: 20px;
+}
+
+.section3-right ul li{
+    display: flex;
+}
+
+.section3-right ul li .icon-section {
+    width: 15%;
+    margin-right: 10px;
+}
+
+.section3-right ul li .content {
+    width: 50%;
+}
+
+.section3-right ul li .icon-section img {
+    width: 100%;
+}
+
+.section3-right ul li .icon-section .line {
+    width: 2px;
+    margin-left: 32px;
+}
+
+.content h4 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 1.25rem;
 }
 
 .inner-body {
@@ -287,11 +315,11 @@ form input {
 
 .left-body {
     width: 75%;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .section3-btn {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 #learn {
@@ -319,7 +347,7 @@ form input {
     display: flex;
 }
 
-.content01 {
+/* .content01 {
     margin-top: 45px;
 }
 
@@ -335,7 +363,7 @@ form input {
     font-size: 1.25rem;
     line-height: 1.5rem;
     margin-bottom: 20px;
-} 
+}  */
 
 /* SECTION 4 STYLING */
 .section4 {
@@ -898,26 +926,12 @@ footer {
         margin-left: 50px;
     }
 
-    .icon {
-        width: 90%;
-        margin-left: 3px;
+    .section3-right ul li .icon-section .line {
+        margin-left: 25px;
     }
 
-    .content01, .content03 {
-        margin-top: 25px;
-    }
-
-    .content02 {
-        margin-top: 28px;
-    }
-
-    .content01 h4, .content02 h4, .content03 h4 {
+    .content h4 {
         font-size: 1rem;
-        margin-bottom: 10px;
-    }
-
-    .content01 p, .content02 p, .content03 p {
-        font-size: 0.8rem;
     }
 
     #process {
@@ -1215,34 +1229,23 @@ footer {
         min-height: 80vh;
     }
 
-   .icon {
-        width: 80%;
-        margin-left: 3px;
+    .section3-right ul li .icon-section .line {
+        margin-left: 22px;
     }
 
-   .icons {
-        margin-top: 25px;
+    .section3-right ul li .content {
+        width: 65%;
     }
 
-
-    .content01 {
-        margin-top: 25px;
-    }
-
-    .content02, .content03  {
-        margin-top: 30px;
-    }
-
-    .content01 h4, .content02 h4, .content03 h4 {
+    .content h4 {
         font-size: 1rem;
-        margin-bottom: 10px;
     }
 
-    .content01 p, .content02 p, .content03 p {
+    .content p {
         font-size: 0.9rem;
-        width: 80%;
     }
 
+   
     .section4 .offers .offer-items {
         width: 46%;
         height: 150px;
